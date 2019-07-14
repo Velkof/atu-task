@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`async actions fails fetching posts 1`] = `
+Array [
+  Object {
+    "type": "GET_POSTS_REQUEST",
+  },
+  Object {
+    "payload": [Error: Request failed with status code 500],
+    "type": "GET_POSTS_FAIL",
+  },
+]
+`;
+
+exports[`async actions fails to fetch post author 1`] = `
+Array [
+  Object {
+    "type": "GET_POST_AUTHOR_REQUEST",
+  },
+  Object {
+    "payload": [Error: Request failed with status code 500],
+    "type": "GET_POST_AUTHOR_FAIL",
+  },
+]
+`;
+
+exports[`async actions fails to fetch post details 1`] = `
+Array [
+  Object {
+    "type": "GET_POST_DETAILS_REQUEST",
+  },
+  Object {
+    "payload": [Error: Request failed with status code 500],
+    "type": "GET_POST_DETAILS_FAIL",
+  },
+]
+`;
+
+exports[`async actions fetches post author successfully 1`] = `
+Array [
+  Object {
+    "type": "GET_POST_AUTHOR_REQUEST",
+  },
+  Object {
+    "payload": Object {
+      "data": Object {
+        "user": Object {
+          "id": 1,
+          "name": "Example name",
+        },
+      },
+    },
+    "type": "GET_POST_AUTHOR_SUCCESS",
+  },
+]
+`;
+
+exports[`async actions fetches post details successfully 1`] = `
+Array [
+  Object {
+    "type": "GET_POST_DETAILS_REQUEST",
+  },
+  Object {
+    "type": "GET_POST_AUTHOR_REQUEST",
+  },
+  Object {
+    "payload": Object {
+      "data": Object {
+        "post": Object {
+          "body": "Testing",
+          "id": 1,
+          "title": "Example",
+          "userId": 1,
+        },
+      },
+    },
+    "type": "GET_POST_DETAILS_SUCCESS",
+  },
+]
+`;
+
+exports[`async actions fetches posts successfully 1`] = `
+Array [
+  Object {
+    "type": "GET_POSTS_REQUEST",
+  },
+  Object {
+    "payload": Object {
+      "data": Object {
+        "posts": Array [
+          Object {
+            "body": "Testing",
+            "id": 1,
+            "title": "Example",
+            "userId": 1,
+          },
+        ],
+      },
+    },
+    "type": "GET_POSTS_SUCCESS",
+  },
+]
+`;

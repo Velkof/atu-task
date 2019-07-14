@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Returns the correct state when it is INITIAL_STATE 1`] = `
+Object {
+  "loading": true,
+  "posts": Array [],
+  "selectedPost": Object {},
+  "selectedPostAuthor": Object {},
+}
+`;
+
+exports[`Returns the correct state when it receives GET_POST_AUTHOR_FAIL 1`] = `
+Object {
+  "loading": false,
+  "posts": Array [],
+  "selectedPost": Object {},
+  "selectedPostAuthor": Object {},
+}
+`;
+
+exports[`Returns the correct state when it receives GET_POST_AUTHOR_SUCCESS 1`] = `
+Object {
+  "loading": false,
+  "posts": Array [],
+  "selectedPost": Object {},
+  "selectedPostAuthor": Object {
+    "user": Object {
+      "id": 1,
+      "name": "User name",
+    },
+  },
+}
+`;
+
+exports[`Returns the correct state when it receives GET_POST_DETAILS_REQUEST 1`] = `
+Object {
+  "loading": true,
+  "posts": Array [],
+  "selectedPost": Object {},
+  "selectedPostAuthor": Object {},
+}
+`;
+
+exports[`Returns the correct state when it receives GET_POST_DETAILS_SUCCESS 1`] = `
+Object {
+  "loading": true,
+  "posts": Array [],
+  "selectedPost": Object {
+    "post": Object {
+      "body": "Post body",
+      "id": 1,
+      "title": "Post title",
+      "userId": 1,
+    },
+  },
+  "selectedPostAuthor": Object {},
+}
+`;
+
+exports[`Returns the correct state when it receives GET_POSTS_FAIL 1`] = `
+Object {
+  "loading": false,
+  "posts": Array [],
+  "selectedPost": Object {},
+  "selectedPostAuthor": Object {},
+}
+`;
+
+exports[`Returns the correct state when it receives GET_POSTS_REQUEST 1`] = `
+Object {
+  "loading": true,
+  "posts": Array [],
+  "selectedPost": Object {},
+  "selectedPostAuthor": Object {},
+}
+`;
+
+exports[`Returns the correct state when it receives GET_POSTS_SUCCESS 1`] = `
+Object {
+  "loading": false,
+  "posts": Object {
+    "posts": Array [
+      Object {
+        "body": "Post body",
+        "id": 1,
+        "title": "Post title",
+        "userId": 1,
+      },
+    ],
+  },
+  "selectedPost": Object {},
+  "selectedPostAuthor": Object {},
+}
+`;

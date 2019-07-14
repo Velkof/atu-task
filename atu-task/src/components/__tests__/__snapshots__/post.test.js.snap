@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Post /> renders successfully 1`] = `
+<div
+  className="post"
+>
+  <div
+    className="post-id"
+  >
+    <p>
+      1
+    </p>
+  </div>
+  <div
+    className="info-container"
+  >
+    <p
+      className="title"
+    >
+      Post title
+    </p>
+  </div>
+  <div
+    className="button-container"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Read post
+    </button>
+  </div>
+</div>
+`;
